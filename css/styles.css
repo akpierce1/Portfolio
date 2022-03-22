@@ -1,0 +1,210 @@
+/* Global Styles
+ -------------------------- */
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    max-width: 500%;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    font-size: 60px;
+    color: #697755;
+}
+
+.nav {
+    text-align: center;
+    border: 1px solid #697755;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav li {
+  display: inline;
+  padding: 12px;
+  margin: auto 1%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4D543B;
+    padding: 5px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* About Me
+ -------------------------- */
+ .portrait {
+    float: right;
+    padding-left: 5%;
+    padding-top: 3%;
+    width: 40%;
+}
+
+ h2 {
+    font-size: 40px;
+    color: #697755;
+}
+
+.about-me {
+    margin: auto 15%;
+    margin-bottom: 10%;
+    color: #4D543B;
+}
+
+/* Project Grid
+ -------------------------- */
+h3 {
+    font-size: 40px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.projects {
+    background-color: #726D7E;
+    padding: 1% 0;
+    padding-bottom: 30px;
+ }
+
+.projects img {
+    width: 100%;
+}
+
+.projects img:hover {
+    opacity: 0.4;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: auto 3%;
+}
+
+.magazine-pages {
+    margin: 50px 30px;
+}
+
+figcaption {
+    color: #F5F5F5;
+    padding: 5px;
+}
+
+/* Footer
+ -------------------------- */
+footer {
+    background-color: #D7DDCF;
+    padding: 1%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.social {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #4D543B;
+    border-radius: 10px;
+}
+
+h4 {
+    color: #697755;
+}
+
+.social {
+    text-decoration: none;
+    color: #4D543B;
+}
+
+.social:hover {
+    text-decoration: underline;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* Responsive 
+-------------------------- */
+@supports (grid-area: auto) {
+
+    @media screen and (max-width: 1040px) {
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            margin: auto 3%;
+        }
+
+        .package-mockup {
+            width: 50%;
+        }
+
+        .portrait {
+            float: none;
+            padding-top: 10%;
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .portrait {
+            float: none;
+            padding-top: 10%;
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            margin-left: -5%;
+        }
+
+        figure {
+            margin: 3% auto;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+        }
+
+        .package-mockup {
+            width: 100%;
+        }
+
+        .magazine-pages {
+            margin: 3%;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .nav a {
+        display: inline-block;
+        padding: 1%;
+    }
+
+    h3 {
+        margin: 0 10%;
+    }
+}
